@@ -6,9 +6,9 @@
  * 
  * 1.显示的创建对象，显示的赋予对象属性值，显示的返回值
  * 
- * 缺点：没有对象识别，不能依赖 instanceof 操作符来确定对象类型
+ * 缺点：没有对象识别，不能通过 instanceof 来确定是否是右侧的构造函数构造出来的实例对象
  *
- * 使用: let obj1 = createPerson('xx',18,'学习') 
+ * 使用: let obj1 = createPerson('xx',18,'学习');  obj1 instanceof createPerson
  */
 function createPerson(name,age,job){
   var o = new Object();
